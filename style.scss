@@ -1,0 +1,212 @@
+    @import "partials/colors";
+    @import "partials/header";
+    @import "partials/layout";
+    @import "partials/section";
+    @import "partials/sectiondois";
+    @import "partials/section_tres";
+    @import "partials/section_quatro";
+    @import "partials/footer";
+    @font-face{
+      font-family: bomb;
+      src: url(/fonts/Urban\ Blocker\ Solid.ttf) format('truetype');
+      font-weight: 600;}
+      
+     @font-face {
+     font-family: vintage;
+      src: url(fonts/VintageParty-FreeVersion.ttf) format('truetype');
+      font-weight: 600;}
+     
+    
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+  
+    }
+   
+   
+    html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+        
+    }
+      
+  
+
+
+
+
+    body{
+      width: 100%;
+  
+      position: relative;
+      background-color: $cor-primaria;
+      overflow-x: hidden;
+    }
+    section{
+      min-height: 100vh;
+      width: 100%;
+      box-shadow: 0 0 4rem .6rem var($cor-primaria);
+      margin: 0;
+      
+    }
+
+    .logo{
+      padding: 0 0 0 2rem;
+    }
+
+
+    @media screen and (max-width: 891px) {
+      html{
+        font-size: 50.5%;
+        
+    }
+
+    .img_principal{
+      width: 65%;
+    }
+
+      .card {
+       
+        margin: 1rem;
+        width: 200px;
+        height: 355px;
+        
+      }
+
+      .slider{
+        
+        width: 70%;
+       
+      } 
+       
+    }
+
+
+    @media screen and (max-width: 675px) {
+      .home {
+        display: flex;
+        flex-direction: column-reverse;
+        
+      }
+      .home h2{
+        font-size: 3.7rem;
+      }
+      .home h6{
+        font-size: 2.5rem;
+      }
+      .home .titulo{
+        width: 100%;
+      }
+      .img_principal{
+        width: 95%;
+      }
+      .card {
+       
+        margin: 1rem;
+        width: 150px;
+        height: 300px;
+        
+      }
+    .slider{
+        
+      width: 80%;
+     
+    }
+    .manual-navigation{
+ 
+      width: 80%;
+      margin-top: -20px;
+    
+    }
+  }
+
+
+
+  @media screen and (max-width: 475px) {
+    .home{
+      height:80vh;
+      
+    }
+    
+    .tela_dois{
+      height: auto;
+    }
+    .home .titulo{
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+    .btn_header{
+      display: none;
+    }
+    .header_principal::before{
+    
+      background-position: center bottom;
+    }
+    
+    .img_principal{
+      width: 90%;
+      margin-top: 8rem;
+    }
+    
+    .tela_dois .titulo{
+      font-size: 12rem;
+    }
+    .card {
+       
+      margin: 1rem;
+      width: 200px;
+      height: 300px;
+      
+    }
+  
+  
+  
+    .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tela_tres{
+  height: 80vh;
+}
+.tela_tres .titulo{
+  font-size: 12rem;}
+
+.manual-navigation{
+ 
+  width: 95.3%;
+  margin-top: -200px;
+
+}
+.slider{
+        
+  width: 100%;
+ margin-top: 15rem;
+}
+.tela_4 .titulo{
+  font-size: 12rem;
+}
+iframe{
+  width: 90%;
+  
+}
+.footer{
+  flex-direction: column-reverse;
+}
+.footer p {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+.btn-whatsapp{
+  bottom: 1rem;
+  right: 1rem;
+  img{
+max-width: 45px;
+  }
+}
+  }
